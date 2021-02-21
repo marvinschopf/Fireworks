@@ -20,7 +20,7 @@ export default class Fireworks extends Component {
     this.movingBall = new Animated.Value(0);
   }
 
-  componentWillMount = () => {
+  UNSAFE_componentWillMount = () => {
     const { height, width, zIndex, iterations, circular } = this.props;
     if (circular) {
       this.fillXYpositions();
